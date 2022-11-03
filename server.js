@@ -19,6 +19,9 @@ connection.once('open', () => {
 })
 
 app.get("/admin", (req, res)=> {
+  res.send("Welcome to admin")
+})
+app.get("/", (req, res)=> {
   res.send("Welcome to my database")
 })
 const exercisesRouter = require('./routes/exercises');
